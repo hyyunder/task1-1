@@ -4,10 +4,11 @@ function collect_same_elements(collection_a, collection_b) {
   var n=0;
   for(var i=0;i<collection_a.length;i++){
     for(var j=0;j<collection_b.length;j++){
-      for(var m=0;m<collection_b[i].length;m++){
+      for(var m=0;m<collection_b[j].length;m++){
         if(collection_a[i]==collection_b[j][m]){
-          result=collection_a[i];
+          result[n]=collection_a[i];
           n++;
+          break;
         }
       }
     }
